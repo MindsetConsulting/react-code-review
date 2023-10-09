@@ -3,7 +3,7 @@ import "./App.css";
 import foods from "./list";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [c, setC] = useState(0);
 
   return (
     <div>
@@ -19,7 +19,7 @@ function App() {
         >
           The Best App Ever
         </h1>
-        <h2>{count}</h2>
+        <h2>{c}</h2>
         <button
           style={{
             backgroundColor: "green",
@@ -30,7 +30,7 @@ function App() {
             borderRadius: "50%",
             boxShadow: "2px 2px 5px rgba(0, 0, 0, 0.3)",
           }}
-          onClick={() => setCount(count - 1)}
+          onClick={() => setC(c - 1)}
         >
           -
         </button>
@@ -45,7 +45,7 @@ function App() {
             borderRadius: "50%",
             boxShadow: "2px 2px 5px rgba(0, 0, 0, 0.3)",
           }}
-          onClick={() => setCount(count + 1)}
+          onClick={() => setC(c + 1)}
         >
           +
         </button>
@@ -61,8 +61,8 @@ function App() {
             boxShadow: "2px 2px 5px rgba(0, 0, 0, 0.3)",
           }}
           onClick={() => {
-            setCount(count - 1);
-            setCount(count - 1);
+            setC(c - 1);
+            setC(c - 1);
           }}
         >
           -2
@@ -79,8 +79,8 @@ function App() {
             boxShadow: "2px 2px 5px rgba(0, 0, 0, 0.3)",
           }}
           onClick={() => {
-            setCount(count + 1);
-            setCount(count + 1);
+            setC(c + 1);
+            setC(c + 1);
           }}
         >
           +2
@@ -94,14 +94,16 @@ function App() {
             border: "none",
             padding: "10px 20px",
             margin: "10px",
+            borderRadius: "5%",
+            boxShadow: "2px 2px 5px rgba(0, 0, 0, 0.3)",
           }}
-          onClick={() => setCount(0)}
+          onClick={() => setC(0)}
         >
           Reset
         </button>
       </div>
-      <div>
-        <h2 style={{ textAlign: "center" }}>Food List</h2>
+      <div style={{ textAlign: "center" }}>
+        <h2>Food List</h2>
         <table style={{ margin: "auto" }}>
           <thead>
             <tr>
