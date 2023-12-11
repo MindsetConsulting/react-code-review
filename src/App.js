@@ -17,7 +17,7 @@ function App() {
             textShadow: "2px 2px 5px rgba(0, 0, 0, 0.3)",
           }}
         >
-          The Best App Ever
+          The Greatest App Ever!!!
         </h1>
         <h2>{c}</h2>
         <button
